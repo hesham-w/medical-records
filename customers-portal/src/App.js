@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import ShoppingCart from './Components/OrderCart';
 
 function App() {
+
+  let products = [
+    { name: 'Product A', id: 1 },
+    { name: 'Product B', id: 2 },
+    { name: 'Product C', id: 3 },
+    { name: 'Product D', id: 4 }
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Hello World</h1>
+      <ShoppingCart orderedRecords={products}></ShoppingCart>
     </div>
   );
 }
