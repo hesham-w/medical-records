@@ -74,3 +74,8 @@ typings/
 
 # FuseBox cache
 .fusebox/
+/backend/Api/bin/Debug/net6.0
+/backend/Api/obj
+/database/obj/Debug
+/database/bin/Debug
+/backend/.vs/MedicalRecords
