@@ -1,4 +1,5 @@
-﻿using Api.Customers.Domain;
+﻿using Api.Customers.Data;
+using Api.Customers.Domain;
 using MediatR;
 
 namespace Api.Customers.Features
@@ -30,11 +31,11 @@ namespace Api.Customers.Features
 
                 await _context.Database.EnsureCreatedAsync(cancellationToken);
 
-                var newCustomer = new Customer(Guid.NewGuid());
+                var newCustomer = new Domain.Customer(Guid.NewGuid());
 
-                _context.Customers.Add(newCustomer);
+                //_context.Customers.Add(newCustomer);
 
-                await _context.SaveChangesAsync();
+                //await _context.SaveChangesAsync();
 
                 return new Response(newCustomer.Id);
             }

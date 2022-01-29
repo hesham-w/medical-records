@@ -123,6 +123,7 @@
     <Folder Include="CustomersSchema" />
     <Folder Include="CustomersSchema\Tables" />
     <Folder Include="OrdersSchema" />
+    <Folder Include="OrdersSchema\Tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CustomersSchema\Schema.sql" />
@@ -130,6 +131,10 @@
     <Build Include="User.sql" />
     <Build Include="CustomersSchema\Tables\Contact.sql" />
     <Build Include="CustomersSchema\Tables\CustomerPreference.sql" />
+    <Build Include="OrdersSchema\Schema.sql" />
+    <Build Include="OrdersSchema\Tables\Case.sql" />
+    <Build Include="OrdersSchema\Tables\WorkflowType.sql" />
+    <Build Include="OrdersSchema\Tables\CasePart.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="MedicalRecordsDb.refactorlog" />

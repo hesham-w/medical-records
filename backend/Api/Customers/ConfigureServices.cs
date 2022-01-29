@@ -1,4 +1,5 @@
-﻿using MediatR;
+﻿using Api.Customers.Data;
+using MediatR;
 
 namespace Api.Customers
 {
